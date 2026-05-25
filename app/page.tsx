@@ -76,7 +76,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex gap-60 bg-amber-400 justify-between items-center">
+        <div className="flex gap-60 justify-between items-center">
           <div className="font-maru flex flex-col">
             <h2 className="font-bold text-2xl">Shop</h2>
             <Link href={'/explore'}>Explore</Link>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local';
 import { Zen_Maru_Gothic } from 'next/font/google';
 import "./globals.css";
+import DesktopNavBar from "@/components/NavBar";
 
 const cooperBlack = localFont({
   src: [{
@@ -34,7 +35,10 @@ export default function RootLayout({
       lang="en"
       className={`${cooperBlack.variable} ${zenMaruGothic.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col relative">
+        <DesktopNavBar />
+        {children}
+      </body>
     </html>
   );
 }
