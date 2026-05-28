@@ -21,9 +21,13 @@ export default function HomePage() {
 
       </nav>
       <main className="relative bg-neutral-50 h-dvh flex flex-col justify-center items-center px-8">
+        <Image src={'/png/orange-bag-hero.png'} alt="Orange dug tote bag" width={140} height={140} className="h-auto absolute -translate-x-30 -translate-y-12" loading="eager" />
+        <Image src={'/png/pink-bag-hero.png'} alt="Pink dug tote bag" width={120} height={120} className="absolute h-auto translate-x-30 -translate-y-10" loading="eager" />
+        <div className="h-5 w-5 rounded-full bg-cyan-300 absolute -translate-x-44 -translate-y-16" />
+        <div className="h-4 w-4 rotate-45 bg-amber-300 absolute -translate-x-40 -translate-y-24"/>
         <h1 className="text-6xl text-center">Go Ducky</h1>
         <h2 className="text-6xl text-center">Shop</h2>
-        <h3 className="font-maru font-bold mt-8 text-xl text-center">Explore <span className="font-cooper relative">QUACKY<img src="/svg/squaky-yellow.svg" alt="Yellow underline" className="absolute top-5 left-0" /></span> design that fits <span className="font-cooper relative">YOU<img src="/svg/squaky-pink.svg" alt="Pink underline" className="absolute top-5 left-0" /></span></h3>
+        <h3 className="font-maru font-bold mt-8 text-xl text-center z-10">Explore <span className="font-cooper relative">QUACKY<img src="/svg/squaky-yellow.svg" alt="Yellow underline" className="absolute top-5 left-0" /></span> design that fits <span className="font-cooper relative">YOU<img src="/svg/squaky-pink.svg" alt="Pink underline" className="absolute top-5 left-0" /></span></h3>
         <ExploreShopButton />
         <div className="absolute bottom-10">
           <ScrollButton target="yellow-wave" />
@@ -76,7 +80,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex gap-60 justify-between items-center">
+        <div className="flex justify-between items-center">
           <div className="font-maru flex flex-col">
             <h2 className="font-bold text-2xl">Shop</h2>
             <Link href={'/explore'}>Explore</Link>
